@@ -64,6 +64,7 @@ public class SignUpActivity extends Activity {
                         // 跳转到登录界面
                         Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
                         startActivity(intent);
+                        SignUpActivity.this.finish();
                     }
                 }
         );
