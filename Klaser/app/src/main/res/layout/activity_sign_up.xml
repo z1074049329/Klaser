@@ -26,11 +26,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="收哪儿•注册"
             android:gravity="center"
-            android:textStyle="italic"
+            android:text="收哪儿•注册"
             android:textColor="#808080"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:textStyle="italic" />
 
         <!--嵌套线性布局-->
         <LinearLayout
