@@ -1,10 +1,13 @@
-package com.app.klaser;
+package com.app.klaser.ui.splash;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Window;
+
+import com.app.klaser.R;
+import com.app.klaser.ui.login.LoginActivity;
 
 /**
  * 加载页
