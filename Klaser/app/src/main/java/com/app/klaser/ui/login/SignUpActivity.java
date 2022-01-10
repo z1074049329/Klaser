@@ -8,9 +8,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.app.klaser.R;
 
-public class SignUpActivity extends Activity {
+public class SignUpActivity extends AppCompatActivity {
     // 调用Actvity
     @Override
     protected void onCreate(Bundle savedInstanceState) {

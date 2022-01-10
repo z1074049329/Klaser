@@ -6,15 +6,17 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.Window;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.app.klaser.R;
 import com.app.klaser.ui.login.LoginActivity;
 
 /**
  * 加载页
  */
-public class SplashActivity extends Activity {
+public class SplashActivity extends AppCompatActivity {
 
-    private static int SPLASH_DISPLAY_LENGHT= 2000;    //延迟2秒
+    private static final int SPLASH_DISPLAY_LENGHT= 2000;    //延迟2秒
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
