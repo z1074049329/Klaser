@@ -1,4 +1,4 @@
-package com.app.klaser;
+package com.app.klaser.ui.login;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.app.klaser.R;
 
 public class SignUpActivity extends Activity {
     // 调用Actvity
