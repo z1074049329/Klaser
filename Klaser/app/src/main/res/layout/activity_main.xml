@@ -1,7 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/home_page_bar"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#EFFFFFFF"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/mainBtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:fontFamily="@font/iconfont"
+            android:text="@string/home_btn"
+            android:textColor="@color/selector_btn_click_text_color"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:fontFamily="@font/iconfont"
+            android:text="@string/search_btn"
+            android:textColor="@color/selector_btn_click_text_color"
+            android:textSize="30sp" />
+
+
+        <Button
+            android:id="@+id/addBtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:fontFamily="@font/iconfont"
+            android:text="@string/add_btn"
+            android:textColor="@color/selector_btn_click_text_color"
+            android:textSize="30sp" />
+
+
+        <Button
+            android:id="@+id/messageBtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:fontFamily="@font/iconfont"
+            android:text="@string/message_btn"
+            android:textColor="@color/selector_btn_click_text_color"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/userBtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:fontFamily="@font/iconfont"
+            android:text="@string/user_btn"
+            android:textColor="@color/selector_btn_click_text_color"
+            android:textSize="30sp" />
+
+    </LinearLayout>
 </LinearLayout>

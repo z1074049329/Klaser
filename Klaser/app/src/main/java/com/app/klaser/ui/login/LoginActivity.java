@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.app.klaser.MainActivity;
 import com.app.klaser.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -35,7 +36,9 @@ public class LoginActivity extends AppCompatActivity {
                         String strPassWord = passWord.getText().toString().trim();
                         // 判断如果用户名为"123456"密码为"123456"则登录成功
                         if (strUserName.equals("123456") && strPassWord.equals("123456")) {
-                            Toast.makeText(LoginActivity.this, "登录成功！", Toast.LENGTH_SHORT).show();
+                            // 跳转到注册界面
+                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                            startActivity(intent);
                         } else {
                             Toast.makeText(LoginActivity.this, "请输入正确的用户名或密码！", Toast.LENGTH_SHORT).show();
                         }
