@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.login.LoginActivity">
+    tools:context=".login.LoginActivity">
 
     <!--使用线性布局-->
     <LinearLayout
@@ -47,7 +47,7 @@
 
                 <!--用户名输入-->
                 <EditText
-                    android:id="@+id/UserNameEdit"
+                    android:id="@+id/login_phoneNumber_Edit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -55,7 +55,9 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="15dp"
                     android:background="@drawable/translucent_edit"
-                    android:hint="输入用户名"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="20sp"
+                    android:hint="请输入手机号"
                     android:padding="15dp"
                     android:singleLine="true"
                     android:textSize="24sp" />
@@ -70,7 +72,7 @@
 
                 <!--密码输入-->
                 <EditText
-                    android:id="@+id/PassWordEdit"
+                    android:id="@+id/login_password_edit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -78,7 +80,9 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="15dp"
                     android:background="@drawable/translucent_edit"
-                    android:hint="输入用户密码"
+                    android:drawableStart="@drawable/ic_baseline_lock_24"
+                    android:drawablePadding="20sp"
+                    android:hint="请输入密码"
                     android:inputType="textPassword"
                     android:maxLength="16"
                     android:padding="15dp"
@@ -96,8 +100,8 @@
 
                 <!--登录按钮-->
                 <Button
-                    android:id="@+id/LoginButton"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/login_login_btn"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
@@ -107,19 +111,37 @@
                     android:textColor="@color/white"
                     android:textSize="24sp" />
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
                 <!--注册按钮-->
                 <Button
-                    android:id="@+id/SignUpButton"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/login_sign_btn"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/translucent_button"
+                    android:background="#00000000"
                     android:padding="15dp"
                     android:text="注   册"
-                    android:textColor="@color/white"
-                    android:textSize="24sp" />
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
 
+                <!--注册按钮-->
+                <Button
+                    android:id="@+id/login_forget_password_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:padding="15dp"
+                    android:text="忘记密码"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
             </LinearLayout>
 
         </LinearLayout>

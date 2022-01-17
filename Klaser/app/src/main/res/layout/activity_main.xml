@@ -7,94 +7,65 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/white">
+        android:background="@color/white"
+        >
 
         <TextView
+            android:id="@+id/title_bar_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/home_page_bar"
+            android:text="@string/activity_main_bottom_tab_home"
             android:textColor="@color/black"
             android:textSize="20sp" />
     </androidx.appcompat.widget.Toolbar>
 
-    <LinearLayout
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#EFFFFFFF"
-        android:orientation="vertical">
+        android:background="#EFFFFFFF">
 
-    </LinearLayout>
+    </androidx.viewpager.widget.ViewPager>
 
-    <LinearLayout
+    <RadioGroup
+        android:id="@+id/bottom_tab_radiogroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:orientation="horizontal">
 
-
-        <Button
-            android:id="@+id/mainBtn"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#00000000"
-            android:fontFamily="@font/iconfont"
+        <RadioButton
+            android:id="@+id/home"
+            style="@style/activity_main_bottom_tab_rbstyle"
             android:text="@string/home_btn"
-            android:textColor="@color/selector_btn_click_text_color"
-            android:textSize="30sp" />
+            android:fontFamily="@font/iconfont"
+            android:checked="true"
 
-        <Button
+            android:textColor="@color/selector_btn_click_text_color"/>
+
+        <RadioButton
             android:id="@+id/searchBtn"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#00000000"
-            android:fontFamily="@font/iconfont"
+            style="@style/activity_main_bottom_tab_rbstyle"
             android:text="@string/search_btn"
-            android:textColor="@color/selector_btn_click_text_color"
-            android:textSize="30sp" />
-
-
-        <Button
+            android:fontFamily="@font/iconfont"
+            android:textColor="@color/selector_btn_click_text_color"/>
+        <RadioButton
             android:id="@+id/addBtn"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#00000000"
+            style="@style/activity_main_bottom_tab_rbstyle"
             android:fontFamily="@font/iconfont"
-            android:text="@string/add_btn"
-            android:textColor="@color/selector_btn_click_text_color"
-            android:textSize="30sp" />
-
-
-        <Button
+            android:text="@string/add_btn"/>
+        <RadioButton
             android:id="@+id/messageBtn"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#00000000"
+            style="@style/activity_main_bottom_tab_rbstyle"
             android:fontFamily="@font/iconfont"
-            android:text="@string/message_btn"
-            android:textColor="@color/selector_btn_click_text_color"
-            android:textSize="30sp" />
-
-        <Button
+            android:text="@string/message_btn"/>
+        <RadioButton
             android:id="@+id/userBtn"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#00000000"
+            style="@style/activity_main_bottom_tab_rbstyle"
             android:fontFamily="@font/iconfont"
             android:text="@string/user_btn"
-            android:textColor="@color/selector_btn_click_text_color"
-            android:textSize="30sp" />
-
-    </LinearLayout>
+            />
+    </RadioGroup>
 </LinearLayout>

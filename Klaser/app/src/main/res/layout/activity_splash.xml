@@ -2,8 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.login.LoginActivity">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:id="@+id/splashScreen"
@@ -20,7 +19,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="爱生活,爱收纳"
+            android:text="@string/splash_title"
             android:gravity="center"
             android:textSize="24sp"
             android:textColor="#2B2929"

@@ -1,6 +1,5 @@
-package com.app.klaser.ui.splash;
+package com.app.klaser.splash;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -9,7 +8,7 @@ import android.view.Window;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.app.klaser.R;
-import com.app.klaser.ui.login.LoginActivity;
+import com.app.klaser.login.LoginActivity;
 
 /**
  * 加载页
@@ -33,3 +32,6 @@ public class SplashActivity extends AppCompatActivity {
         }, SPLASH_DISPLAY_LENGHT);
     }
 }
+
+
+
