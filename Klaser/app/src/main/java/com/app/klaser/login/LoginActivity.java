@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.app.klaser.reset.ForgetPasswordActivity;
-import com.app.klaser.home.HomeActivity;
+import com.app.klaser.home.activity.HomeActivity;
 import com.app.klaser.R;
 
 public class LoginActivity extends Activity implements View.OnClickListener{
@@ -52,6 +52,7 @@ public class LoginActivity extends Activity implements View.OnClickListener{
             // 跳转到注册界面
             intent = new Intent(loginContext, HomeActivity.class);
             startActivity(intent);
+            LoginActivity.this.finish();
         } else {
             Toast.makeText(loginContext, "请输入正确的用户名或密码！", Toast.LENGTH_SHORT).show();
         }

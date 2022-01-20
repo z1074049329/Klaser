@@ -7,8 +7,7 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/white"
-        >
+        android:background="@color/white">
 
         <TextView
             android:id="@+id/title_bar_textView"
@@ -20,14 +19,12 @@
             android:textSize="20sp" />
     </androidx.appcompat.widget.Toolbar>
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewpager"
+    <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#EFFFFFFF">
-
-    </androidx.viewpager.widget.ViewPager>
+        android:background="#EFFFFFFF" />
 
     <RadioGroup
         android:id="@+id/bottom_tab_radiogroup"
@@ -37,35 +34,36 @@
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/home"
+            android:id="@+id/rb_home"
             style="@style/activity_main_bottom_tab_rbstyle"
+            android:fontFamily="@font/iconfont"
             android:text="@string/home_btn"
-            android:fontFamily="@font/iconfont"
-            android:checked="true"
-
-            android:textColor="@color/selector_btn_click_text_color"/>
+            android:textColor="@color/selector_btn_click_text_color" />
 
         <RadioButton
-            android:id="@+id/searchBtn"
+            android:id="@+id/rb_search"
             style="@style/activity_main_bottom_tab_rbstyle"
+            android:fontFamily="@font/iconfont"
             android:text="@string/search_btn"
-            android:fontFamily="@font/iconfont"
-            android:textColor="@color/selector_btn_click_text_color"/>
+            android:textColor="@color/selector_btn_click_text_color" />
+
         <RadioButton
-            android:id="@+id/addBtn"
+            android:id="@+id/rb_add"
             style="@style/activity_main_bottom_tab_rbstyle"
             android:fontFamily="@font/iconfont"
-            android:text="@string/add_btn"/>
+            android:text="@string/add_btn" />
+
         <RadioButton
-            android:id="@+id/messageBtn"
+            android:id="@+id/rb_message"
             style="@style/activity_main_bottom_tab_rbstyle"
             android:fontFamily="@font/iconfont"
-            android:text="@string/message_btn"/>
+            android:text="@string/message_btn" />
+
         <RadioButton
-            android:id="@+id/userBtn"
+            android:id="@+id/rb_user"
             style="@style/activity_main_bottom_tab_rbstyle"
             android:fontFamily="@font/iconfont"
-            android:text="@string/user_btn"
-            />
+            android:text="@string/user_btn" />
     </RadioGroup>
+
 </LinearLayout>
